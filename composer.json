@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "{{ theme.namespace }}\\": "src/"
+            "{{ theme.namespace }}\\": "child/"
         }
     }
 }

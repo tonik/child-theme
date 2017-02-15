@@ -42,7 +42,7 @@ return [
         'templates' => 'resources/templates',
         'assets' => 'resources/assets',
         'public' => 'public',
-        'src' => 'src',
+        'src' => 'child',
     ],
 
     /*
@@ -56,7 +56,7 @@ return [
     |
     */
     'autoload' => [
-        'child-helpers.php',
-        'Http/child-assets.php',
+        'helpers.php',
+        'Http/assets.php',
     ],
 ];
