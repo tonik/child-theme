@@ -32,10 +32,10 @@ function theme($key = null)
 function config($key = null)
 {
     if (null !== $key) {
-        return theme('config')->get($key);
+        return theme('child.config')->get($key);
     }
 
-    return theme('config');
+    return theme('child.config');
 }
 
 /**

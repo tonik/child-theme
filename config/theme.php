@@ -39,6 +39,7 @@ return [
     |
     */
     'directories' => [
+        'languages' => 'resources/languages',
         'templates' => 'resources/templates',
         'assets' => 'resources/assets',
         'public' => 'public',
@@ -58,5 +59,6 @@ return [
     'autoload' => [
         'helpers.php',
         'Http/assets.php',
+        'Setup/supports.php',
     ],
 ];
