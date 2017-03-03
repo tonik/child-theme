@@ -1,11 +1,11 @@
 /*
 Theme Name: {{ theme.name }}
-Theme URI: {{ theme.uri }}
-Template: {{ theme.parent }}
+Theme URI: {{ theme.url }}
 Description: {{ theme.description }}
+Template: {{ theme.parent }}
 Version: {{ theme.version }}
 Author: {{ theme.author }}
-Author URI: {{ theme.author.uri }}
+Author URI: {{ theme.author.url }}
 Text Domain: {{ theme.textdomain }}
 License: GPLv2 License
 License URI: https://wordpress.org/about/gpl/

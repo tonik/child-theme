@@ -1,6 +1,6 @@
 <?php
 
-namespace {{ theme.namespace }}\Theme\Http;
+namespace App\Theme\Child\Http;
 
 /*
 |-----------------------------------------------------------------
@@ -14,7 +14,7 @@ namespace {{ theme.namespace }}\Theme\Http;
 |
 */
 
-use function {{ theme.namespace }}\Theme\asset_path;
+use function App\Theme\Child\asset_path;
 
 /**
  * Registers child theme stylesheet files.
@@ -24,4 +24,4 @@ use function {{ theme.namespace }}\Theme\asset_path;
 function register_stylesheets() {
     wp_enqueue_style('child-theme-stylesheet', asset_path('css/child-theme.css'));
 }
-add_action('wp_enqueue_scripts', '{{ theme.namespace }}\Http\register_stylesheets');
+add_action('wp_enqueue_scripts', 'App\Theme\Child\Http\register_stylesheets');

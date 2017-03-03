@@ -1,6 +1,6 @@
 <?php
 
-namespace {{ theme.namespace }}\Setup;
+namespace App\Theme\Child\Setup;
 
 /*
 |-----------------------------------------------------------
@@ -13,7 +13,7 @@ namespace {{ theme.namespace }}\Setup;
 |
 */
 
-use function {{ theme.namespace }}\config;
+use function App\Theme\Child\config;
 
 /**
  * Loads the child theme textdomain.
@@ -26,4 +26,4 @@ function load_textdomain() {
 
     load_child_theme_textdomain(config('textdomain'), "{$paths['directory']}/{$directories['languages']}");
 }
-add_action('after_setup_theme', '{{ theme.namespace }}\Setup\load_textdomain');
+add_action('after_setup_theme', 'App\Theme\Child\Setup\load_textdomain');
