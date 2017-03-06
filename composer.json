@@ -2,7 +2,7 @@
     "name": "tonik/child-theme",
     "description": "WordPress Child Theme Starter.",
     "keywords": ["tonik", "gin", "wordpress", "child-theme"],
-    "license": "GPL-2.0+",
+    "license": "MIT",
     "type": "wordpress-theme",
     "require": {
         "php": ">=5.6"
