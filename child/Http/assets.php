@@ -22,6 +22,6 @@ use function App\Theme\Child\asset_path;
  * @return void
  */
 function register_stylesheets() {
-    wp_enqueue_style('child-theme-stylesheet', asset_path('css/child-theme.css'));
+    wp_enqueue_style('child-app', asset_path('css/app.css'));
 }
 add_action('wp_enqueue_scripts', 'App\Theme\Child\Http\register_stylesheets');
