@@ -19,11 +19,17 @@ if (file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
     require $composer;
 }
 
-// Child theme HAVE TO be bootstraped after parent
+// Child theme **HAVE TO** be bootstraped after parent
 // theme load. We will use `after_load` action
 // to delay loading of this child theme.
 add_action('Tonik\Gin\Foundation\Autoloader\after_load', function () {
-	$theme = require_once __DIR__ . '/bootstrap/theme.php';
+    static $bootstraped = false;
 
-	(new Tonik\Gin\Foundation\Autoloader($theme->get('child.config')))->register();
+    if (! $bootstraped) {
+        $bootstraped = true;
+
+        $theme = require_once __DIR__ . '/bootstrap/theme.php';
+
+        (new Tonik\Gin\Foundation\Autoloader($theme->get('child.config')))->register();
+    }
 });

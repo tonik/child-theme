@@ -30,6 +30,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Templates files extension
+    |--------------------------------------------------------------------------
+    |
+    | Determines the theme's templates settings like an extension of the files.
+    | By default, they use `.tpl.php` suffix to distinguish template files
+    | from controllers, but you are free to change it however you like.
+    |
+    */
+    'templates' => [
+        'extension' => '.tpl.php'
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Theme Directory Structure Paths
     |--------------------------------------------------------------------------
     |
@@ -41,9 +55,8 @@ return [
     'directories' => [
         'languages' => 'resources/languages',
         'templates' => 'resources/templates',
-        'assets' => 'resources/assets',
         'public' => 'public',
-        'src' => 'child',
+        'app' => 'child',
     ],
 
     /*
