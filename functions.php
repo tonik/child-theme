@@ -22,7 +22,7 @@ if (file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
 // Child theme **HAVE TO** be bootstraped after parent
 // theme load. We will use `after_load` action
 // to delay loading of this child theme.
-add_action('Tonik\Gin\Foundation\Autoloader\after_load', function () {
+add_action('tonik/gin/autoloader/after_load', function () {
     static $bootstraped = false;
 
     if (! $bootstraped) {
