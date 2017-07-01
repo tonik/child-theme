@@ -11,7 +11,6 @@ namespace App\Theme\Child\Http;
 | stylesheets and scripts, which will be load
 | additionaly to the parent theme assets.
 |
-|
 */
 
 use function App\Theme\Child\asset_path;
@@ -22,6 +21,6 @@ use function App\Theme\Child\asset_path;
  * @return void
  */
 function register_stylesheets() {
-    wp_enqueue_style('child-app', asset_path('css/app.css'));
+    wp_enqueue_style('child-app', asset_path('css/child.css'));
 }
 add_action('wp_enqueue_scripts', 'App\Theme\Child\Http\register_stylesheets');
