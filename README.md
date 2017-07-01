@@ -6,6 +6,8 @@
 
 Make sure you have all these dependences installed before moving on:
 
+- WordPress >= 4.7
+- PHP >= 7.0
 - [Composer](https://getcomposer.org)
 
 ## Development
