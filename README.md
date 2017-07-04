@@ -10,6 +10,10 @@ Make sure you have all these dependences installed before moving on:
 - PHP >= 7.0
 - [Composer](https://getcomposer.org)
 
+### Documentation
+
+Comprehensive documentation is available at http://labs.tonik.pl/theme/
+
 ## Development
 
 By default child theme boilerplate do not comes with any task runner of manager for theme assets. However, if you need it, you can copy relevant Webpack configuration files and settings directly from parent theme.
