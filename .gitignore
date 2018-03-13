@@ -2,8 +2,8 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 node_modules
 npm-debug.log
-vendor
-composer.lock
 
 .DS_Store
 Thumbs.db
+
+vendor
