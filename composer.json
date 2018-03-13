@@ -8,6 +8,6 @@
     "php": ">=7.0"
   },
   "require-dev": {
-    "tonik/cli": "^2.0.0"
+    "tonik/cli": "dev-develop"
   }
 }
