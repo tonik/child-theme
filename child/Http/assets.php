@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Theme\Child\Http;
+namespace Tonik\Theme\Child\Http;
 
 /*
 |-----------------------------------------------------------------
@@ -13,7 +13,7 @@ namespace App\Theme\Child\Http;
 |
 */
 
-use function App\Theme\Child\asset_path;
+use function Tonik\Theme\Child\asset_path;
 
 /**
  * Registers child theme stylesheet files.
@@ -23,4 +23,4 @@ use function App\Theme\Child\asset_path;
 function register_stylesheets() {
     wp_enqueue_style('child-app', asset_path('css/child.css'));
 }
-add_action('wp_enqueue_scripts', 'App\Theme\Child\Http\register_stylesheets');
+add_action('wp_enqueue_scripts', 'Tonik\Theme\Child\Http\register_stylesheets');

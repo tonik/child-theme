@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Theme\Child;
+namespace Tonik\Theme\Child;
 
 use Tonik\Gin\Asset\Asset;
 use Tonik\Gin\Foundation\Theme;

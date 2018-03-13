@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Theme\Child\Setup;
+namespace Tonik\Theme\Child\Setup;
 
 /*
 |-----------------------------------------------------------
@@ -13,7 +13,7 @@ namespace App\Theme\Child\Setup;
 |
 */
 
-use function App\Theme\Child\config;
+use function Tonik\Theme\Child\config;
 
 /**
  * Loads the child theme textdomain.
@@ -26,4 +26,4 @@ function load_textdomain() {
 
     load_child_theme_textdomain(config('textdomain'), "{$paths['directory']}/{$directories['languages']}");
 }
-add_action('after_setup_theme', 'App\Theme\Child\Setup\load_textdomain');
+add_action('after_setup_theme', 'Tonik\Theme\Child\Setup\load_textdomain');
