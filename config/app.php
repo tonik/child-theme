@@ -67,6 +67,7 @@ return [
     | The components listed below will be automatically loaded on the
     | theme bootstrap by `functions.php` file. Feel free to add your
     | own files to this array which you would like to autoload.
+    | Child theme loads its components from `child/` folder.
     |
     */
     'autoload' => [
