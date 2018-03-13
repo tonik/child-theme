@@ -1,5 +1,7 @@
 # Child Theme for Tonik WordPress Starter Theme
 
+> The `develop` branch tracks starter development and it's not a stable code. If you want a stable version, use the [`master`](//github.com/tonik/child-theme/tree/master) branch or one of the latest [releases](//github.com/tonik/child-theme/releases).
+
 ### Child theme boilerplate for Tonik Starter Theme based themes. Makes easy to customize and overwrite parent theme components and provides the same set of tools for child theme development.
 
 ### Requirements
